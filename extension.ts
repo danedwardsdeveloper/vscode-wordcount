@@ -45,7 +45,7 @@ export class WordCounter {
             let wordCount = this._getWordCount(doc);
 
             // Update the status bar
-            this._statusBarItem.text = wordCount !== 1 ? `$(pencil) ${wordCount} Words` : '$(pencil) 1 Word';
+            this._statusBarItem.text = wordCount !== 1 ? `$(pencil) ${wordCount.toLocaleString()} Words` : '$(pencil) 1 Word';
             this._statusBarItem.show();
         } else {
             this._statusBarItem.hide();

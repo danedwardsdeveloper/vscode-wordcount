@@ -1,5 +1,9 @@
 # VSCode - WordCount README
- 
+
+Fork of [microsoft/vscode-wordcount](https://github.com/microsoft/vscode-wordcount) that groups the count with thousands separators — `1,234 Words` rather than `1234 Words`. The separator follows the editor's locale, so it is a comma under `en-*`.
+
+The build has also been brought up to date: `@types/vscode` and TypeScript 5 in place of the retired `vscode` npm package, which no longer installs.
+
 This is a simple extension that illustrates a number of concepts when it comes to writing extensions for VS Code.  
 
 * Activation on a file type open
